@@ -7,7 +7,7 @@ Installation
 
 Download the psm1 file in My documents\WindowsPowershell\Modules\pswatch or simply run this one line installation script:
 
-	iex ((new-object net.webclient).DownloadString("http://bit.ly/Install-PsWatch"))
+	iex ((new-object net.webclient).DownloadString("https://raw.githubusercontent.com/Beej126/pswatch/master/install.ps1"))
 
 Usage
 =====
@@ -30,11 +30,6 @@ You can filter by using powershell pipelining as follows:
 Options
 =======
 
-The wacth cmdlet has the following parameters:
+The watch cmdlet has the following parameters:
 
-  * location: the directory to watch. Optional, default to current directory.
-  * includeSubdirectories: default to true.
-  * includeChanged: default to true.
-  * includeRenamed: default to true.
-  * includeCreated: default to true.
-  * includeDeleted: default to false.
+  * location: file or folder to watch. (required)
